@@ -59,7 +59,6 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     this.authService.loginUsuario(correo, password)
       .then(credenciales => {
-        //console.log(credenciales);
 
         this.store.dispatch( ui.stopLoading() );
         // Swal.close();
